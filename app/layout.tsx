@@ -16,11 +16,6 @@ export const metadata: Metadata = {
   title: "GeDoc | Gestión documental inteligente",
   description:
     "Plataforma moderna para organizar, controlar y compartir documentos de forma simple.",
-  icons: {
-    icon: "/logo-gedoc-horizontal.png",
-    shortcut: "/logo-gedoc-horizontal.png",
-    apple: "/logo-gedoc-horizontal.png",
-  },
 };
 
 export default function RootLayout({
