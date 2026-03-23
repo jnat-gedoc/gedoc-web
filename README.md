@@ -18,6 +18,22 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+## Formulario de contacto
+
+La landing incluye un formulario conectado al endpoint `POST /api/contact`.
+
+### Variables de entorno opcionales (envío real por email)
+
+Si quieres que el formulario envíe correos usando Resend, crea un archivo `.env.local` con:
+
+```bash
+RESEND_API_KEY=tu_api_key
+CONTACT_TO_EMAIL=destino@tu-dominio.com
+CONTACT_FROM_EMAIL=no-reply@tu-dominio.com
+```
+
+Si no configuras estas variables, el formulario seguirá funcionando y el mensaje quedará registrado en logs del servidor.
+
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
